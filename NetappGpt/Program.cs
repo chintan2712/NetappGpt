@@ -2,6 +2,10 @@ using System.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Bind to Render-assigned port
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+
 // Add services
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -20,15 +24,15 @@ builder.Services.AddHttpClient("NetAppClient", client =>
 
 var app = builder.Build();
 
-// Enable Swagger for all environments
+// Swagger for all environments
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "NetAppGPT API V1");
-    c.RoutePrefix = string.Empty; // Swagger available at root
+    c.RoutePrefix = string.Empty;
 });
 
-// No HTTPS redirection: Render handles TLS externally
+// No HTTPS redirection
 // app.UseHttpsRedirection();
 
 app.UseAuthorization();
