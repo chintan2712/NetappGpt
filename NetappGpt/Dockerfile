@@ -6,12 +6,14 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
-# Copy csproj from current folder (no extra subfolder)
+# Project file in the same folder
 COPY ["NetappGpt.csproj", "."]
 RUN dotnet restore "NetappGpt.csproj"
 
-# Copy all other files
+# Copy everything else
 COPY . .
+
+WORKDIR "/src"
 RUN dotnet build "NetappGpt.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
@@ -22,7 +24,5 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 
-# Bind to Docker port
 ENV ASPNETCORE_URLS=http://+:8080
-
 ENTRYPOINT ["dotnet", "NetappGpt.dll"]
