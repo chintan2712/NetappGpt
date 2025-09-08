@@ -2,17 +2,8 @@ using System.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Configure Kestrel to listen on all IPs for HTTP
-builder.WebHost.ConfigureKestrel(options =>
-{
-    options.ListenAnyIP(8080); // HTTP only
-    // Don't enable HTTPS here; Render handles HTTPS externally
-});
-
-// Add services to the container
+// Add services
 builder.Services.AddControllers();
-
-// Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -29,25 +20,18 @@ builder.Services.AddHttpClient("NetAppClient", client =>
 
 var app = builder.Build();
 
-// Bind to 0.0.0.0:8080
-app.Urls.Add("http://0.0.0.0:8080");
-
-// Configure middleware
-if (app.Environment.IsDevelopment())
+// Enable Swagger for all environments
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "NetAppGPT API V1");
-        c.RoutePrefix = string.Empty; // Swagger at root for dev
-    });
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "NetAppGPT API V1");
+    c.RoutePrefix = string.Empty; // Swagger available at root
+});
 
-// **Disable HTTPS redirection for production on Render**
-// app.UseHttpsRedirection(); // <-- comment this out
+// No HTTPS redirection: Render handles TLS externally
+// app.UseHttpsRedirection();
 
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
