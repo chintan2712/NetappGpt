@@ -1,31 +1,29 @@
-# Use the official .NET SDK image
+# ---------- Stage 1: Build ----------
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-
-# Set the working directory inside the container
 WORKDIR /src
 
-# Copy the .csproj file and restore any dependencies (via dotnet restore)
-COPY NetappGpt/NetappGpt.csproj ./NetappGpt/
-WORKDIR /src/NetappGpt
+# Copy only the project file for dependency caching
+COPY NetappGpt.csproj ./
+
+# Restore dependencies
 RUN dotnet restore
 
-# Copy the rest of the application code
-COPY . .
+# Copy all source files
+COPY . ./
 
-# Publish the application to the /app directory
-RUN dotnet publish -c Release -o /app
+# Build and publish the app to /app folder
+RUN dotnet publish -c Release -o /app --no-restore /p:GenerateAssemblyInfo=false
 
-# Set the base image for the runtime
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-
-# Set the working directory inside the container
+# ---------- Stage 2: Runtime ----------
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
-# Copy the published application from the build stage
-COPY --from=build /app .
+# Copy published files from build stage
+COPY --from=build /app ./
 
-# Expose the port the app runs on
-EXPOSE 80
+# Expose ports (adjust if needed)
+EXPOSE 8080
+EXPOSE 8081
 
-# Define the entry point for the application
+# Set the entrypoint
 ENTRYPOINT ["dotnet", "NetappGpt.dll"]

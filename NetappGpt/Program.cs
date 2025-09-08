@@ -2,6 +2,13 @@ using System.Net.Http.Headers;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Optional: configure Kestrel to listen on all IPs
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(8080); // HTTP
+    //options.ListenAnyIP(8081, listenOptions => listenOptions.UseHttps()); // HTTPS
+});
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -21,7 +28,7 @@ builder.Services.AddHttpClient("NetAppClient", client =>
 
 
 var app = builder.Build();
-
+app.Urls.Add("http://0.0.0.0:8080");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
