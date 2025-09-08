@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-08T20:30:38.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -34,8 +51,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AQIAABQAAAAAAAAAAAAwwDMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-08T20:16:27.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T20:16:27.227Z"
             },
             {
               "$type": "Document",
@@ -45,7 +61,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAgAAABAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T20:07:46.868Z",
               "EditorCaption": ""
