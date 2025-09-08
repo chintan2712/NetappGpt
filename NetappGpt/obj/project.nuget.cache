@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "f1XQi/R8qk+qQUpYQRgafhAh6HpAiBChm59Gw2f5Leh3Mn3Sz/j4LJLdP13xCI/ybByMsHE+VD1r6qMn/cdGIQ==",
+  "success": true,
+  "projectFilePath": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\NetappGpt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chintan.ranka_infobe\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\chintan.ranka_infobe\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\chintan.ranka_infobe\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.6\\microsoft.visualstudio.azure.containers.tools.targets.1.19.6.nupkg.sha512",
+    "C:\\Users\\chintan.ranka_infobe\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\chintan.ranka_infobe\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\chintan.ranka_infobe\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\chintan.ranka_infobe\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

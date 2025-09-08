@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetappGpt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42b3e1728d448976dde3f54a209898f81238905a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51ab99cbbbc0e8411195594c93d7811a452a9971")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetappGpt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetappGpt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
