@@ -1,25 +1,31 @@
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-WORKDIR /app
-EXPOSE 8080
-
+# Use the official .NET SDK image
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-ARG BUILD_CONFIGURATION=Release
+
+# Set the working directory inside the container
 WORKDIR /src
 
-# Copy only the project file first (for caching)
-COPY ["NetappGpt/NetappGpt.csproj", "NetappGpt/"]
-RUN dotnet restore "NetappGpt/NetappGpt.csproj"
+# Copy the .csproj file and restore any dependencies (via dotnet restore)
+COPY NetappGpt/NetappGpt.csproj ./NetappGpt/
+WORKDIR /src/NetappGpt
+RUN dotnet restore
 
-# Copy all source code
+# Copy the rest of the application code
 COPY . .
 
-WORKDIR "/src/NetappGpt"
-RUN dotnet build "NetappGpt.csproj" -c $BUILD_CONFIGURATION -o /app/build
-RUN dotnet publish "NetappGpt.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+# Publish the application to the /app directory
+RUN dotnet publish -c Release -o /app
 
-FROM base AS final
+# Set the base image for the runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+
+# Set the working directory inside the container
 WORKDIR /app
-COPY --from=build /app/publish .
 
-ENV ASPNETCORE_URLS=http://+:8080
+# Copy the published application from the build stage
+COPY --from=build /app .
+
+# Expose the port the app runs on
+EXPOSE 80
+
+# Define the entry point for the application
 ENTRYPOINT ["dotnet", "NetappGpt.dll"]
