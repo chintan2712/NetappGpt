@@ -11,6 +11,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()    // Allow requests from any origin
+              .AllowAnyMethod()    // Allow any HTTP method (GET, POST, etc.)
+              .AllowAnyHeader();   // Allow any headers
+    });
+});
 // HttpClient
 builder.Services.AddHttpClient("NetAppClient", client =>
 {
@@ -31,7 +40,7 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "NetAppGPT API V1");
     c.RoutePrefix = string.Empty;
 });
-
+app.UseCors("AllowAll");
 // No HTTPS redirection
 // app.UseHttpsRedirection();
 
