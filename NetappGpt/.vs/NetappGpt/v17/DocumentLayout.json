@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\controllers\\svmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:controllers\\svmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\controllers\\volumescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:controllers\\volumescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\models\\createvolumerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:models\\createvolumerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\netappgpt.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -25,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|d:\\netappgpt\\netappgpt\\netappgpt\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{E26D54D7-1D0B-4010-9BCB-A0D5A35C45C5}|NetappGpt.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,20 +54,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "NetappGpt.http",
-              "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\NetappGpt.http",
-              "RelativeDocumentMoniker": "NetappGpt.http",
-              "ToolTip": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\NetappGpt.http",
-              "RelativeToolTip": "NetappGpt.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-09-08T21:00:07.956Z",
+              "DocumentIndex": 2,
+              "Title": "SvmController.cs",
+              "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Controllers\\SvmController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SvmController.cs",
+              "ToolTip": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Controllers\\SvmController.cs",
+              "RelativeToolTip": "Controllers\\SvmController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAmwBYAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T10:35:10.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "CreateVolumeRequest.cs",
+              "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Models\\CreateVolumeRequest.cs",
+              "RelativeDocumentMoniker": "Models\\CreateVolumeRequest.cs",
+              "ToolTip": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Models\\CreateVolumeRequest.cs",
+              "RelativeToolTip": "Models\\CreateVolumeRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-12T10:34:19.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -67,12 +88,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-08T21:00:06.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T21:00:06.808Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -80,24 +100,25 @@
               "RelativeToolTip": "Dockerfile",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-08T20:30:38.627Z"
+              "WhenOpened": "2025-09-08T20:30:38.627Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
               "ToolTip": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAwwBYAAAAUAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwCwAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-09-08T20:16:27.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -105,25 +126,36 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAACQAAAAAAAAAAAAAACoAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T20:07:46.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T20:07:46.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAkwBoAAAAIAAAA",
+              "DocumentIndex": 3,
+              "Title": "VolumesController.cs",
+              "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Controllers\\VolumesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VolumesController.cs",
+              "ToolTip": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\Controllers\\VolumesController.cs",
+              "RelativeToolTip": "Controllers\\VolumesController.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAiwFMAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T20:59:54.463Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
+              "Title": "NetappGpt.http",
+              "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\NetappGpt.http",
+              "RelativeDocumentMoniker": "NetappGpt.http",
+              "ToolTip": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\NetappGpt.http",
+              "RelativeToolTip": "NetappGpt.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-09-08T21:00:07.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "D:\\NetappGpt\\NetappGpt\\NetappGpt\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "WeatherForecast.cs",
@@ -131,8 +163,7 @@
               "RelativeToolTip": "WeatherForecast.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T21:00:09.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-08T21:00:09.026Z"
             }
           ]
         }

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using NetappGpt.Models;
 using System.Net.Http;
 using System.Text.Json;
 
@@ -78,4 +79,25 @@ public class VolumesController : ControllerBase
         var json = JsonSerializer.Deserialize<JsonDocument>(content, _jsonOptions);
         return Ok(json);
     }
+
+    [HttpPost]
+    public IActionResult CreateVolume([FromBody] CreateVolumeRequest request)
+    {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        var createdVolume = new
+        {
+            uuid = Guid.NewGuid().ToString(),
+            name = request.Name,
+            size = request.Size,
+            state = "online",
+            svm = new { name = request.SvmName }
+        };
+
+        return CreatedAtAction(nameof(GetVolumes), createdVolume);
+    }
+
 }
