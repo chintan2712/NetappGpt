@@ -60,25 +60,25 @@ public class VolumesController : ControllerBase
         //return Ok(json);
     }
 
-    [HttpGet("filter")]
-    public async Task<IActionResult> GetFilteredVolumes([FromQuery] Dictionary<string, string>? filters)
-    {
-        string queryString = filters != null && filters.Any()
-            ? "?" + string.Join("&", filters.Select(kv => $"{kv.Key}={Uri.EscapeDataString(kv.Value)}"))
-            : string.Empty;
+    //[HttpGet("filter")]
+    //public async Task<IActionResult> GetFilteredVolumes([FromQuery] Dictionary<string, string>? filters)
+    //{
+    //    string queryString = filters != null && filters.Any()
+    //        ? "?" + string.Join("&", filters.Select(kv => $"{kv.Key}={Uri.EscapeDataString(kv.Value)}"))
+    //        : string.Empty;
 
-        var response = await _httpClient.GetAsync($"/api/storage/volumes{queryString}");
-        var content = await response.Content.ReadAsStringAsync();
+    //    var response = await _httpClient.GetAsync($"/api/storage/volumes{queryString}");
+    //    var content = await response.Content.ReadAsStringAsync();
 
-        if (!response.IsSuccessStatusCode)
-        {
-            return StatusCode((int)response.StatusCode, new { error = content });
-        }
+    //    if (!response.IsSuccessStatusCode)
+    //    {
+    //        return StatusCode((int)response.StatusCode, new { error = content });
+    //    }
 
-        // Deserialize into something meaningful instead of object
-        var json = JsonSerializer.Deserialize<JsonDocument>(content, _jsonOptions);
-        return Ok(json);
-    }
+    //    // Deserialize into something meaningful instead of object
+    //    var json = JsonSerializer.Deserialize<JsonDocument>(content, _jsonOptions);
+    //    return Ok(json);
+    //}
 
     [HttpPost]
     public IActionResult CreateVolume([FromBody] CreateVolumeRequest request)
