@@ -88,6 +88,13 @@ public class VolumesController : ControllerBase
             return BadRequest(ModelState);
         }
 
+        var existingVolumes = new List<string> { "test", "volume1" };
+
+        if (existingVolumes.Any(v => v.Equals(request.Name, StringComparison.OrdinalIgnoreCase)))
+        {
+            return Conflict(new { message = $"A volume with the name '{request.Name}' already exists." });
+        }
+
         var createdVolume = new
         {
             uuid = Guid.NewGuid().ToString(),

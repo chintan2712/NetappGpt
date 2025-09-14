@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NetappGpt.Models;
-using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 
 namespace NetappGpt.Controllers;
@@ -10,6 +9,7 @@ namespace NetappGpt.Controllers;
 public class SvmsController : ControllerBase
 {
     private readonly HttpClient _httpClient;
+
     private readonly JsonSerializerOptions _jsonOptions;
 
     public SvmsController(IHttpClientFactory httpClientFactory)
