@@ -101,7 +101,7 @@ public class VolumesController : ControllerBase
             name = request.Name,
             size = request.Size,
             state = "online",
-            svm = new { name = request.SvmName }
+            svm = new { name = request.Svm.Name }
         };
 
         return CreatedAtAction(nameof(GetVolumes), createdVolume);
