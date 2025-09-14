@@ -11,7 +11,12 @@ namespace NetappGpt.Models
         public string Size { get; set; } = default!;
 
         [Required]
-        public string SvmName { get; set; } = default!;
+        public Svm Svm { get; set; } = default!;
+    }
+
+    public class Svm
+    {
+        public required string Name { get; set; }
     }
 
 }
