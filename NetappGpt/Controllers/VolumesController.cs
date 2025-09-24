@@ -50,7 +50,6 @@ public class VolumesController : ControllerBase
         return Task.FromResult<IActionResult>(Ok(sampleJson));
 
         //var response = await _httpClient.GetAsync("/api/storage/volumes");
-
         //var content = await response.Content.ReadAsStringAsync();
 
         //if (!response.IsSuccessStatusCode)
